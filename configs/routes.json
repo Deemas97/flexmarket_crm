@@ -1,0 +1,27 @@
+{
+  "routes": {
+    "/": {
+      "controller": "MainController",
+      "method": "index",
+      "httpMethod": "GET"
+    },
+    "/companies": {
+      "controller": "CompaniesController",
+      "method": "index",
+      "httpMethod": "GET"
+    },
+    "/company/{id}/edit": {
+      "controller": "CompaniesController",
+      "method": "company",
+      "httpMethod": "GET",
+      "params": {
+        "id": "\\d+"
+      }
+    },
+    "/api/company/{id}/delete": {
+      "controller": "CompaniesActionsController",
+      "method": "apiDelete",
+      "httpMethod": "DELETE"
+    }
+  }
+}

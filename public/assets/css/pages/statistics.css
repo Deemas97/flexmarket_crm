@@ -1,0 +1,47 @@
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+.table th {
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.chart-area {
+    position: relative;
+    height: 20rem;
+    width: 100%;
+}
+
+.chart-pie {
+    position: relative;
+    height: 15rem;
+    width: 100%;
+}
+
+.chart-area, .chart-pie, .chart-bar {
+    position: relative;
+    height: 20rem;
+    width: 100%;
+}
+.nav-tabs .nav-link {
+    color: var(--crm-secondary);
+    font-weight: 600;
+}
+.nav-tabs .nav-link.active {
+    color: var(--crm-primary);
+    border-bottom: 2px solid var(--crm-primary);
+}
+
+@media (min-width: 768px) {
+    .chart-area {
+        height: 20rem;
+    }
+    .chart-pie {
+        height: 15rem;
+    }
+}

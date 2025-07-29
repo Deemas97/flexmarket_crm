@@ -1,0 +1,48 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fc;
+}
+
+.crm-navbar {
+    background-color: #2c3e50;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.error-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.error-icon {
+    font-size: 5rem;
+    color: #e74a3b;
+    margin-bottom: 2rem;
+}
+
+.error-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5a5c69;
+    margin-bottom: 1.5rem;
+}
+
+.error-text {
+    font-size: 1.25rem;
+    color: #6e707e;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+@media (max-width: 768px) {
+    .error-title {
+        font-size: 2rem;
+    }
+    
+    .error-text {
+        font-size: 1.1rem;
+    }
+}

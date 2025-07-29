@@ -1,0 +1,16 @@
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+.table th {
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn-group-sm .btn {
+    padding: 0.25rem 0.5rem;
+}

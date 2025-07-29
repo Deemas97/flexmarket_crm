@@ -1,0 +1,37 @@
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+.table th {
+    white-space: nowrap;
+}
+.table td {
+    vertical-align: middle;
+}
+.chart-area {
+    position: relative;
+    height: 20rem;
+    width: 100%;
+}
+.chart-pie {
+    position: relative;
+    height: 15rem;
+    width: 100%;
+}
+@media (max-width: 992px) {
+    .crm-main {
+        margin-left: 0;
+        transition: margin-left 0.3s ease;
+    }
+    .sidebar-open .crm-main {
+        margin-left: var(--crm-sidebar-width);
+    }
+}
+@media (min-width: 768px) {
+    .chart-area {
+        height: 20rem;
+    }
+    .chart-pie {
+        height: 15rem;
+    }
+}

@@ -1,0 +1,46 @@
+:root {
+    --crm-sidebar-width: 250px;
+    --crm-navbar-height: 80px;
+    
+    --crm-primary: #2c3e50;
+    --crm-secondary: #7f8c8d;
+    --crm-accent: #3498db;
+    --crm-light: #ecf0f1;
+    --crm-dark: #34495e;
+
+    --error-color: #e74c3c;
+    --success-color: #2ecc71;
+}
+body {
+    overflow-x: hidden;
+    background-color: #f5f7fa;
+}
+.crm-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.crm-wrapper {
+    display: flex;
+    flex: 1;
+    padding-top: var(--crm-navbar-height);
+}
+.crm-main {
+    flex: 1;
+    margin-left: var(--crm-sidebar-width);
+    background: #f8f9fc;
+    min-height: calc(100vh - var(--crm-navbar-height));
+    padding-bottom: 2rem;
+    overflow-y: auto;
+}
+@media (max-width: 992px) {
+    .crm-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .sidebar-open .crm-main {
+        margin-left: var(--crm-sidebar-width);
+        width: calc(100% - var(--crm-sidebar-width)) !important;
+    }
+}
